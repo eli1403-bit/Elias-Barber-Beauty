@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haarschnitte - Elias Barber & Beauty</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            background-color: transparent;
+            color: #d4af37;
+            border: 2px solid #d4af37;
+            padding: 10px 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-btn.active, .nav-btn:hover {
+            background-color: #d4af37;
+            color: #121212;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .galerie-container {
+            max-width: 700px;
+            width: 100%;
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #d4af37;
+            font-size: 2.8rem;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .untertitel {
+            color: #888;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .galerie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .galerie-item {
+            background-color: #222;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .galerie-item:hover {
+            transform: translateY(-5px);
+            border-color: #d4af37;
+        }
+
+        .galerie-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #222;
+        }
+
+        .galerie-item p {
+            font-size: 1rem;
+            color: #d4af37;
+            margin-top: 12px;
+            margin-bottom: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+                /* Überschrift oben links in der Ecke */
+        .header-links {
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            text-align: left;
+        }
+
+        .header-links h4 {
+            color: #d4af37;
+            margin: 0;
+            font-size: 2rem; /* Schön groß */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .header-links span {
+            color: #888;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* Für Handys: Text wandert automatisch in die Mitte, damit nichts abgeschnitten wird */
+        @media (max-width: 900px) {
+            .header-links {
+                position: relative;
+                top: 0;
+                left: 0;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+    </style>
+ </head>
+ <body>
+     <!-- Große Überschrift oben links -->
+     <div class="header-links">
+         <h4>Elias</h4>
+         <span>Barber & Beauty</span>
+     </div>
+    <nav>
+        <a href="index.html" class="nav-btn">Startseite</a>
+        <a href="preise.html" class="nav-btn">Preise</a>
+        <a href="haarschnitte.html" class="nav-btn active">Haarschnitte</a>
+    </nav>
+
+
+    <div class="galerie-container">
+        <h2>Elias</h2>
+        <div class="untertitel">Galerie & Inspirationen</div>
+
+
+        <div class="galerie-grid">
+            <!-- Bild 1 -->
+            <div class="galerie-item">
+                <img src="https://unsplash.com" alt="Sharp Mid-Fade">
+                <p>Sharp Mid-Fade</p>
+            </div>
+            <!-- Bild 2 -->
+            <div class="galerie-item">
+                <img src="https://unsplash.com" alt="Premium Beard Styling">
+                <p>Premium Beard Trim</p>
+            </div>
+            <!-- Bild 3 -->
+            <div class="galerie-item">
+                <img src="https://unsplash.com" alt="Classic Pompadour">
+                <p>Classic Pompadour</p>
+            </div>
+            <!-- Bild 4 -->
+            <div class="galerie-item">
+                <img src="https://unsplash.com" alt="Textured Crop">
+                <p>Textured Crop Top</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

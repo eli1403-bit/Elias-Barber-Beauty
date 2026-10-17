@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preise - Elias Barber & Beauty</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav {
+            margin-top: 30px;
+            margin-bottom: 40px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .nav-btn {
+            background-color: transparent;
+            color: #d4af37;
+            border: 2px solid #d4af37;
+            padding: 10px 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .nav-btn.active, .nav-btn:hover {
+            background-color: #d4af37;
+            color: #121212;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+        }
+
+        .preisliste {
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            background-color: #1a1a1a;
+            padding: 40px 30px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+            border: 1px solid #333;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #d4af37;
+            font-size: 2.8rem;
+            margin: 0 0 5px 0;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .untertitel {
+            color: #888;
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .kategorie {
+            margin-bottom: 40px;
+        }
+
+        h3 {
+            color: #d4af37;
+            font-size: 1.5rem;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid #2a2a2a;
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+
+        li:last-child {
+            border-bottom: none;
+        }
+
+        strong {
+            color: #fff;
+            display: block;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .details {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+        }
+                /* Überschrift oben links in der Ecke */
+        .header-links {
+            position: absolute;
+            top: 25px;
+            left: 40px;
+            text-align: left;
+        }
+
+        .header-links h4 {
+            color: #d4af37;
+            margin: 0;
+            font-size: 2rem; /* Schön groß */
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .header-links span {
+            color: #888;
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            display: block;
+            margin-top: 2px;
+        }
+
+        /* Für Handys: Text wandert automatisch in die Mitte, damit nichts abgeschnitten wird */
+        @media (max-width: 900px) {
+            .header-links {
+                position: relative;
+                top: 0;
+                left: 0;
+                text-align: center;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+        }
+
+     </style>
+ </head>
+ <body>
+     <!-- Große Überschrift oben links -->
+     <div class="header-links">
+         <h4>Elias</h4>
+         <span>Barber & Beauty</span>
+     </div>
+    <nav>
+        <a href="index.html" class="nav-btn">Startseite</a>
+        <a href="preise.html" class="nav-btn active">Preise</a>
+        <a href="haarschnitte.html" class="nav-btn">Haarschnitte</a>
+    </nav>
+
+
+    <div class="preisliste">
+        <h2>Elias</h2>
+        <div class="untertitel">Barber & Beauty</div>
+
+        <div class="kategorie">
+            <h3>Frauen</h3>
+            <ul>
+                <li><strong>Beraten, Waschen, Schneiden & Föhnen</strong><span class="details">kurz 27€ | mittel 32€ | lang 37€</span></li>
+                <li><strong>Waschen & Föhnen</strong><span class="details">kurz 18€ | mittel 24€ | lang 30€</span></li>
+                <li><strong>Haarkur</strong><span class="details">5€</span></li>
+                <li><strong>Farbe</strong><span class="details">Ansatzfarbe 29€ | mit Tönung ab 40€ | komplett ab 40€</span></li>
+                <li><strong>Strähnen</strong><span class="details">Ansatz ab 40€ | ganze Länge ab 60€</span></li>
+                <li><strong>Balayage</strong><span class="details">ab 70€</span></li>
+                <li><strong>Hochsteckfrisur</strong><span class="details">ab 50€</span></li>
+                <li><strong>Augenbrauen Formen</strong><span class="details">mit Pinzette 5€ | mit Faden 7€</span></li>
+                <li><strong>Augenbrauen Färben</strong><span class="details">7€</span></li>
+                <li><strong>Wimpern Färben</strong><span class="details">8€</span></li>
+            </ul>
+        </div>
+
+        <div class="kategorie">
+            <h3>Männer</h3>
+            <ul>
+                <li><strong>Beraten, Waschen, Schneiden & Stylen</strong><span class="details">17€ (mit Waschen: 20€)</span></li>
+                <li><strong>Bart</strong><span class="details">ab 8€</span></li>
+                <li><strong>Wachs</strong><span class="details">Augenbrauen 5€ | Nase 3€</span></li>
+                <li><strong>Augenbrauen Formen</strong><span class="details">mit Faden 5€</span></li>
+            </ul>
+        </div>
+
+        <div class="kategorie">
+            <h3>Kinder</h3>
+            <p style="color: #888; font-style: italic; margin-top: -10px; margin-bottom: 15px;">Beraten, Waschen, Schneiden & Stylen</p>
+            <ul>
+                <li><strong>Bis 10 Jahre</strong><span class="details">10€</span></li>
+                <li><strong>Bis 15 Jahre</strong><span class="details">13€</span></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
+
